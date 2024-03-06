@@ -1,3 +1,8 @@
+# Per recepire le modifiche di OpenProject
+
+git fetch upstream
+git merge upstream/main
+
 # OpenProject Deploy
 
 Recipes and examples for deploying OpenProject.
