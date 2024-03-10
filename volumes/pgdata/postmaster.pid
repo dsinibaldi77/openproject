@@ -1,8 +1,8 @@
-103
+132
 /var/openproject/pgdata
-1710092793
+1710095841
 5432
 /var/run/postgresql
 0.0.0.0
-  5196802         1
-stopping
+  4978881         5
+ready   

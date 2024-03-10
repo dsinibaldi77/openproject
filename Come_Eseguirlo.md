@@ -24,8 +24,8 @@ docker run -d -p 80:80 --name openproject \
   -e OPENPROJECT_SECRET_KEY_BASE=secret \
   -e OPENPROJECT_HOST__NAME=inva-openproject.com \
   -e OPENPROJECT_HTTPS=false \
-  -v ${pwd}/volumes/pgdata:/var/openproject/pgdata \
-  -v ${pwd}/volumes/assets:/var/openproject/assets \
+  -v /var/apps/PM/openproject/volumes/pgdata:/var/openproject/pgdata \
+  -v /var/apps/PM/openproject/volumes/assets:/var/openproject/assets \
   openproject/community:13
 
 # dopo un po è disponibile (qualche minuto)
