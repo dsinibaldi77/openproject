@@ -24,8 +24,8 @@ docker run -d -p 80:80 --name openproject \
   -e OPENPROJECT_SECRET_KEY_BASE=secret \
   -e OPENPROJECT_HOST__NAME=inva-openproject.com \
   -e OPENPROJECT_HTTPS=false \
-  -v /var/lib/openproject/pgdata:/var/openproject/pgdata \
-  -v /var/lib/openproject/assets:/var/openproject/assets \
+  -v ${pwd}/volumes/pgdata:/var/openproject/pgdata \
+  -v ${pwd}/volumes/assets:/var/openproject/assets \
   openproject/community:13
 
 # dopo un po è disponibile (qualche minuto)
@@ -42,3 +42,8 @@ docker start openproject
 
 # per rimuovere tutto 
 docker rm openproject
+
+
+
+
+
