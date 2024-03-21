@@ -1,7 +1,6 @@
 # Per recepire le modifiche di OpenProject
 
-git fetch upstream
-git merge upstream/main
+git fetch upstream && git merge upstream/main
 
 # OpenProject Deploy
 
@@ -18,7 +17,7 @@ sudo nano /etc/hosts
 # 127.0.0.1     inva-openproject.com
 
 
-# Creo il container e lo avvio in background (al posto di -d metto -it lo apro in background)
+# Creo il container e lo avvio in background (al posto di -d metto -it lo apro sul terminale)
 
 docker run -d -p 80:80 --name openproject \
   -e OPENPROJECT_SECRET_KEY_BASE=secret \
