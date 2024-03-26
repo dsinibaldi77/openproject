@@ -12,6 +12,10 @@ Recipes and examples for deploying OpenProject.
 # Se non sono già state create, creo le cartelle per i volumi
 sudo mkdir -p /var/lib/openproject/{pgdata,assets}
 
+
+sudo usermod -aG systemd-timesync <nome_utente>
+
+
 sudo nano /etc/hosts
 # e aggiungo
 # 127.0.0.1     inva-openproject.com
